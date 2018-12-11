@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://rawgit.com/aframevr/aframe/cf15c15/dist/aframe-master.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.3.0/dist/aframe-physics-system.min.js"></script>
+  </head>
+  <body>
+    <a-scene physics>
+    	<a-assets>
+    	  <a-asset-item id="tree" src="objects/albol/model.gltf"></a-asset-item>
+    	  <a-asset-item id="tree2" src="objects/albol2/PineTree.gltf"></a-asset-item>
+    	  <img id="texture" src="ground_texture.jpg">
+    	  <img id="texture2" src="maze_texture.jpg">
+
+  		</a-assets>
+
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="100" height="100" src="#texture" repeat="50 50" static-body></a-plane>
+		<a-box position=" 1 0 -2" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" 1 0 -4" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" 1 0 0" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -1 0 0" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" 0 0 1" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -1 0 -4" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>      
+		<a-box position=" -1 0 -2" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -1 0 -7" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" 1 0 -7" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>                     
+      <a-box position=" 3 0 -7" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+      <a-box position=" -3 0 -7" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+      <a-box position=" -4 0 -4" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+      <a-box position=" -4 0 -2" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+      <a-box position=" -2 0 1" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -4 0 1" rotation="0 90 0" src="#texture2" depth="2.5" height="4" width="0.5" repeat="3 4" static-body></a-box>  
+		<a-box position=" -4.875 0 -1" rotation="0 90 0" src="#texture2" depth="2.25" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -5 0 0" rotation="0 180 0" src="#texture2" depth="2.5" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -5 0 -7" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -7 0 -7" rotation="0 90 0" src="#texture2" depth="2.5" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -7 0 -5" rotation="0 90 0" src="#texture2" depth="2.5" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -6 0 -4" rotation="0 180 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -6 0 -3" rotation="0 180 0" src="#texture2" depth="0.5" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -8 0 -4" rotation="0 180 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -8 0 -3" rotation="0 180 0" src="#texture2" depth="0.5" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -7 0 -1" rotation="0 90 0" src="#texture2" depth="2.5" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -9 0 -1" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -9 0 -3" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -10 0 -4" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -11 0 -1" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -11 0 -3" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -13 0 -3" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box> 
+		<a-box position=" -14 0 -2" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>                     
+		<a-box position=" -14 0 0" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -14 0 1" rotation="0 0 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -13 0 2" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -11 0 2" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" -9 0 2" rotation="0 90 0" src="#texture2" depth="2" height="4" width="0.5" repeat="3 4" static-body></a-box>
+		<a-box position=" 0 0 -20" rotation="0 0 0" src="#texture" depth="4" height="30" width="4" repeat="2 10" static-body></a-box>
+		
+		
+      <a-sky color="white"></a-sky>
+
+      <a-light type="ambient" color="white" ></a-light>
+<!--	<a-light type="point" intensity="0.25" position="4 7 4" color="white" animation="property rotation; to: 360 0 0; dur: 1000; loop: true"></a-light>
+		<a-light type="point" intensity="1" position="-4 7 -4" color="white"></a-light>
+		<a-light type="point" intensity="1" position="4 7 4" color="black"></a-light>
+		<a-light type="point" intensity="1" position="-4 7 4" color="white"></a-light>-->
+			
+		<a-entity movement-controls kinematic-body="radius: .3">
+        <a-entity camera position="0 1.6 0" look-controls></a-entity>
+        <a-entity laser-controls="hand: right"></a-entity>
+        <a-entity oculus-go-controls></a-entity>
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>
